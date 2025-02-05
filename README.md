@@ -216,3 +216,10 @@ Go to the browser reload the webpage and Observe the changes. CONGRATULATIONS!
 </p>
 
 <br />
+
+<h2>osTicket Installed!</h2>
+
+<b>osTicket is now installed and ready for use! In the next project I will walk you through how to configure agents, their permissions and access, users, and more!  </b>
+<br />
+<br />
+</p>

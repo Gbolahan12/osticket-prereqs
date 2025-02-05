@@ -108,9 +108,111 @@ I will then install Microsoft Visual C++
 </p>
 
 </p>
-<img src="https://i.imgur.com/ffC8T3x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  
+<img src="https://i.imgur.com/fFSOHCQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <p>
+    <img src="https://i.imgur.com/ffC8T3x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+    <p>
+    <img src="https://i.imgur.com/vzl1bTL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+  <p>
+    <img src="https://i.imgur.com/1Sqs2tj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
 Now I install MySQL and go through the installation settings.
+</p>
+
+ <p>
+    <img src="https://i.imgur.com/hgtqRFa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/8mdB70Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/hFQ82iW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+  
+I open IIS as an Administrator go to PHP Manager> Register new PHP version and then select the file shown.
+
+<p>
+    <img src="https://i.imgur.com/G85S8tI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/tMsvUn0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+    
+  Next I'll unzip osTicket folder and copy the "upload" file to the wwwroot file in the inetpub directory, Rename "upload" folder to "osTicket".
+  </p>
+
+  
+   <p>
+   <img src="https://i.imgur.com/jDFzzMt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+    <img src="https://i.imgur.com/k3iLDw4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+ 
+Now open IIS and load the Browser *80 Notice some extensions are not enabled. I'll enable a few of those in IIS. Go to Sites> Default Web Site> osTicket Click PHP Manager> Enable or disable an extension. Enable php_imap.dll, php_intl.dll, and php_opcache.dll.
+  </p>
+
+<p>
+    <img src="https://i.imgur.com/yYjBxUp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Next browse in file explorer to C drive> osTicket> include> ost-sampleconfig.php and remove the "sample" from the name.
+
+</p>
+
+<p>
+    <img src="https://i.imgur.com/flhTzKy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+
+<p>
+    <img src="https://i.imgur.com/VCMrFjI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+I will right-click on ost-config.php> Properties> Security> Advanced> Disable Inheritance> Remove all inherited permissions from this object, Click on the add buton to add permissions to the file> Select a principle> type "everyone"> Check Names> OK> check all permissions> OK> apply> OK.
+
+</p>
+
+<p>
+    <img src="https://i.imgur.com/2RDH95f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Go back to the browser and hit continue on the osTicket webpage and fill out the setup page.
+
+</p>
+
+<p>
+    <img src="https://i.imgur.com/llb8gHn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+      <img src="https://i.imgur.com/qgwQU0A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+
+<p>
+        <img src="https://i.imgur.com/qINfpvU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Install HediSQL for out database setup.
+we'll have to connect the database using HeidiSQL, In HeidiSQL click New> Username = root> Password = root > open. 
+
+</p>
+
+</p>
+<p>
+        <img src="https://i.imgur.com/hJQgAS9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+
+  <img src="https://i.imgur.com/eKG4sK1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+</p>
+Go to the browser reload the webpage and Observe the changes. CONGRATULATIONS!
+
 </p>
 
 <br />
